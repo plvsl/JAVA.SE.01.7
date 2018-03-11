@@ -1,6 +1,6 @@
-package musicalInstruments.Keyboards;
+package main.musicalInstrument.keyboard;
 
-import musicalInstruments.IMusicalInstrument;
+import main.musicalInstrument.IMusicalInstrument;
 
 public abstract class KeyboardInstrument implements IMusicalInstrument {
 

@@ -1,4 +1,4 @@
-package musicalInstruments.Stringed;
+package main.musicalInstrument.stringed;
 
 public class Harp extends StringedInstrument {
     private boolean electronicPickups;
@@ -9,15 +9,11 @@ public class Harp extends StringedInstrument {
     }
 
     public String play(String customAction, int value) {
-        String temp = null;
+        StringBuilder temp = new StringBuilder();
         for (int i = 0; i < value; i++) {
-            temp += customAction;
+            temp.append(customAction);
         }
-        return customAction = temp;
-    }
-
-    public void electronicHarp(boolean value) {
-        electronicPickups = value;
+        return temp.toString();
     }
 
     @Override
@@ -30,6 +26,11 @@ public class Harp extends StringedInstrument {
         return "Now Harp is cleaned up";
     }
 
+    public void electronicHarp(boolean value) {
+        electronicPickups = value;
+    }
 
-
+    public boolean isElectronicPickups() {
+        return electronicPickups;
+    }
 }

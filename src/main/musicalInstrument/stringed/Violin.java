@@ -1,4 +1,4 @@
-package musicalInstruments.Stringed;
+package main.musicalInstrument.stringed;
 
 public class Violin extends StringedInstrument {
 

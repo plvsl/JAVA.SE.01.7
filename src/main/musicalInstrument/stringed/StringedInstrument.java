@@ -1,6 +1,6 @@
-package musicalInstruments.Stringed;
+package main.musicalInstrument.stringed;
 
-import musicalInstruments.IMusicalInstrument;
+import main.musicalInstrument.IMusicalInstrument;
 
 public abstract class StringedInstrument implements IMusicalInstrument {
 

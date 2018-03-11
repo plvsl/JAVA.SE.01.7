@@ -1,7 +1,7 @@
-package musicalInstruments.Keyboards;
+package main.musicalInstrument.keyboard;
 
 public class PipeOrgan extends KeyboardInstrument {
-    private boolean FootKeyboardUsing;
+    private boolean footKeyboardUsing;
 
     @Override
     public String play() {
@@ -9,15 +9,11 @@ public class PipeOrgan extends KeyboardInstrument {
     }
 
     public String play(String customAction, int value) {
-        String temp = null;
+        String temp = "";
         for (int i = 0; i < value; i++) {
             temp += customAction;
         }
         return customAction = temp;
-    }
-
-    public void useFootKeyboard(boolean value) {
-        FootKeyboardUsing = value;
     }
 
     @Override
@@ -27,14 +23,14 @@ public class PipeOrgan extends KeyboardInstrument {
 
     @Override
     public String setUp() {
-        return "Pipe organ is set uo";
+        return "Pipe organ is set up";
     }
 
     public boolean getFootKeyboardUsing() {
-        return FootKeyboardUsing;
+        return footKeyboardUsing;
     }
 
-    public void setFootKeyboardUsing(boolean footKeyboardUsing) {
-        FootKeyboardUsing = footKeyboardUsing;
+    public void useFootKeyboard(boolean value) {
+        footKeyboardUsing = value;
     }
 }

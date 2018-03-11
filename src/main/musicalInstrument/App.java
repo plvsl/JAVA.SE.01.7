@@ -1,9 +1,9 @@
-package musicalInstruments;
+package main.musicalInstrument;
 
-import musicalInstruments.Keyboards.Piano;
-import musicalInstruments.Keyboards.PipeOrgan;
-import musicalInstruments.Stringed.Harp;
-import musicalInstruments.Stringed.Violin;
+import main.musicalInstrument.keyboard.Piano;
+import main.musicalInstrument.keyboard.PipeOrgan;
+import main.musicalInstrument.stringed.Harp;
+import main.musicalInstrument.stringed.Violin;
 
 public class App {
 

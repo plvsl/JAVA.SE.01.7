@@ -1,4 +1,4 @@
-package musicalInstruments.Keyboards;
+package main.musicalInstrument.keyboard;
 
 public class Piano extends KeyboardInstrument {
     private boolean treadleIsPushed;
@@ -13,32 +13,27 @@ public class Piano extends KeyboardInstrument {
     }
 
     public String play(String customAction, int value) {
-        String temp = null;
+        StringBuilder temp = new StringBuilder();
         for (int i = 0; i < value; i++) {
-            temp += customAction;
+            temp.append(customAction);
         }
-        return customAction = temp;
+        return temp.toString();
     }
 
-    public void pushOnTreadle(boolean value) {
-        treadleIsPushed = value;
-    }
-
-    public void setUp(boolean possibilityOfSettingUp) {
+    public String setUp(boolean possibilityOfSettingUp) {
         if (possibilityOfSettingUp) {
-            System.out.println("Now Piano is set up");
+            return "Now Piano is set up";
         }
-        if (!possibilityOfSettingUp) {
-            System.out.println("Piano is broken and can not be configured");
+        else {
+            return "Piano is broken and can not be configured";
         }
     }
-
 
     public boolean isTreadleIsPushed() {
         return treadleIsPushed;
     }
 
-    public void setTreadleIsPushed(boolean treadleIsPushed) {
-        this.treadleIsPushed = treadleIsPushed;
+    public void pushOnTreadle(boolean value) {
+        treadleIsPushed = value;
     }
 }
